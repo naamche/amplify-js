@@ -39,6 +39,6 @@ export const getSessionStorageWithFallback = (): Storage => {
     console.error('LocalStorage access failed:', e);
   }
 
-  // Return in-memory storage as a fallback if localStorage is not accessible
+  // Return in-memory storage as a fallback if sessionStorage is not accessible
   return new InMemoryStorage();
 };
